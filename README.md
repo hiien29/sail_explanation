@@ -15,6 +15,7 @@ cd 任意のディレクトリ名
 ```
 
 2. 下記コマンドでLaravel sailをインストール（※時間が掛かる）
+「laravel-app」がLaravelプロジェクト名になります
 
 ``` 
 curl -s "https://laravel.build/laravel-app" | bash
@@ -24,3 +25,42 @@ curl -s "https://laravel.build/laravel-app" | bash
 ブラウザで https://laravel.build/laravel-app で確認できる
 
 ![image](https://github.com/hiien29/sail_explanation/assets/132329554/b9d98dd2-9527-468d-90eb-62e3c70ef592)
+
+(補足)利用したいコンテナを個別に指定できる(PostgreSQLの場合)
+```
+curl -s "https://laravel.build/laravel-app?with=pgsql" | bash
+```
+
+3. コマンドを実行すると途中でパスワードを求められるため自分のパソコンのパスワードを入力
+
+![image](https://github.com/hiien29/sail_explanation/assets/132329554/1fc19794-045b-4d91-84e2-a6979e5050c0)
+
+4. Laravelのプロジェクトに移動しDockerのイメージをビルドする
+(docker buildコマンドはDocker fileからImageを作成するためのコマンド)
+
+```
+cd Laravelのプロジェクト名
+
+./vendor/bin/sail up
+```
+
+下記URLにアクセスすると、Laravelのトップページが表示される
+（他のプロジェクトを立ち上げている場合は他のプロジェクトをdocker stopさせること）
+http://localhost/
+
+5. シェルエイリアスの設定
+(フルパス(./vendor/bin/sail)を省略(sail) するため)
+
+「i」で入力可能にし、入力後「escキー」→「:wq(保存)」
+
+```
+vi ~/.zshrc
+
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+```
+
+6. 保存した後、下記コマンドで反映
+
+```
+source ~/.zshrc
+```
