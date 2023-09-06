@@ -1,8 +1,11 @@
 # Laravel sail 環境構築
+<br>
 
 ## sailとは
 * Laravelアプリケーションを開発するためにDockerをベースに構築された環境を提供
 * PHP、MySQL、Redisを使用してLaravelアプリケーションを構築するための優れた出発点を提供
+
+<br>
 
 ## 環境構築方法(mac)
 <br>
