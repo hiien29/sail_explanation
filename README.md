@@ -5,6 +5,8 @@
 * PHP、MySQL、Redisを使用してLaravelアプリケーションを構築するための優れた出発点を提供
 
 ## 環境構築方法(mac)
+
+
 1. 任意のディレクトリを作成し移動する（必要であれば）
 
 ``` 
@@ -13,6 +15,8 @@
 mkdir 任意のディレクトリ名
 cd 任意のディレクトリ名
 ```
+
+
 
 2. 下記コマンドでLaravel sailをインストール（※時間が掛かる）
 「laravel-app」がLaravelプロジェクト名になります
@@ -31,9 +35,13 @@ curl -s "https://laravel.build/laravel-app" | bash
 curl -s "https://laravel.build/laravel-app?with=pgsql" | bash
 ```
 
+
+
 3. コマンドを実行すると途中でパスワードを求められるため自分のパソコンのパスワードを入力
 
 ![image](https://github.com/hiien29/sail_explanation/assets/132329554/1fc19794-045b-4d91-84e2-a6979e5050c0)
+
+
 
 4. Laravelのプロジェクトに移動しDockerのイメージをビルドする
 (docker buildコマンドはDocker fileからImageを作成するためのコマンド)
@@ -48,6 +56,8 @@ cd Laravelのプロジェクト名
 （他のプロジェクトを立ち上げている場合は他のプロジェクトをdocker stopさせること）
 http://localhost/
 
+
+
 5. シェルエイリアスの設定
 (フルパス(./vendor/bin/sail)を省略(sail) するため)
 
@@ -58,6 +68,8 @@ vi ~/.zshrc
 
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 ```
+
+
 
 6. 保存した後、下記コマンドで反映
 
