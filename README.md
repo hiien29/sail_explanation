@@ -15,11 +15,12 @@
 mkdir 任意のディレクトリ名
 cd 任意のディレクトリ名
 ```
-<br>
+
 <br>
 
-2. 下記コマンドでLaravel sailをインストール（※時間が掛かる）
-「laravel-app」がLaravelプロジェクト名になります
+**2.下記コマンドでLaravel sailをインストール（※時間が掛かる）**<br>
+
+「laravel-app」がLaravelプロジェクト名になる
 
 ``` 
 curl -s "https://laravel.build/laravel-app" | bash
