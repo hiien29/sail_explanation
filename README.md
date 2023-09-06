@@ -8,6 +8,17 @@
 1. 任意のディレクトリを作成し移動する（必要であれば）
 
 ``` 
+//作成したディレクトリの中にLaravelプロジェクトディレクトリが作成される
 mkdir 任意のディレクトリ名
 cd 任意のディレクトリ名
 ```
+
+2. 下記コマンドでLaravel sailをインストール（※時間が掛かる）
+
+``` 
+curl -s "https://laravel.build/laravel-app" | bash
+```
+
+デフォルトではmysql、redis、meilisearch、mailhog、seleniumのコンテナが作成される
+ブラウザで https://laravel.build/laravel-app で確認できる
+
