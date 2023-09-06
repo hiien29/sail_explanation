@@ -56,7 +56,9 @@ cd Laravelのプロジェクト名
 ```
 
 下記URLにアクセスすると、Laravelのトップページが表示される
+<br>
 （他のプロジェクトを立ち上げている場合は他のプロジェクトをdocker stopさせること）
+<br>
 http://localhost/
 
 <br>
